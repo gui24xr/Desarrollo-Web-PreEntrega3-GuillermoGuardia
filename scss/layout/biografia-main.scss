@@ -1,0 +1,43 @@
+
+
+
+.biografia_container{
+        
+    @include container_secciones(url("../imagenes/img_form_sucr.jpg"))
+    .contenedor_txt{
+
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        grid-row-start: 1;
+        grid-row-end: 8;
+        overflow-y:hidden;
+        margin: 50px 0px 0 100px;
+        padding: 30px 30px 30px 30px;
+        background-color: rgba(5, 90, 55, 0.85); /* Color de fondo + transparencia de la division con rgba */
+        box-shadow: $boxshadow-tipo1;
+        
+        h1{
+    
+        margin: 0 0 010px;
+        background-color: transparent;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(255, 255, 255);
+        }
+    
+        p{
+    
+        height: 400px;
+        padding: 40px 20px 20px 20px;
+        background-color: transparent;
+        overflow-y: scroll;
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    
+    }
+
+}
+
+
+

@@ -1,0 +1,115 @@
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $height-nav-bar;
+    background-color: $color-fondo-nav-bar;
+    box-shadow: $boxshadow-tipo1;
+    overflow: hidden;
+    
+    
+    .header_nav_bar{
+        display: flex;
+        max-width: 992px;
+        background-color:transparent;
+        .header_nav_logo1{
+            width: 52px;
+            height: 72px;
+            background-color:transparent;
+            margin:0px 0px 0px 30px;
+            padding: 0 0 0 0;
+        }
+        .header_nav_toggle{
+            display: none;
+            color:white;
+            font-size: 30px;
+            border: none;
+            padding: 0px 10px 0px 10px;
+            background: none;
+            margin: -25px 0 0 0;
+        }
+      
+        ul{
+            display: flex;
+            padding: 10px 0px 0px 50px;
+            background-color:transparent;
+            li{
+                list-style-type:none;
+                padding: 18px 7px 40px 7px;
+                background-color:transparent;
+                a{
+
+                    width: max-content;
+                    font: familia_1;
+                    color: #f8f7f7;
+                    text-decoration: none;
+
+                    padding: 18px 7px 40px 7px;
+                    background-color:transparent;
+
+
+                    letter-spacing: 0.15em;
+                    font-style:normal;
+                    font-weight:400px;
+                    font-size: 16px;
+                }
+                .header_nav_mxflag{
+
+                    width: 54px;
+                    height: 45px;
+                    background-color:transparent;
+                    margin: -15px 0 0 320px;
+                }
+
+                
+            }
+        }
+    }
+
+    .social_bar{
+            display: flex;
+            position: fixed;
+            width: 180px;
+            margin: $posicion-social-bar; /*340px 0px 0px 96%;*/
+            background-color: transparent;
+            box-shadow: $boxshadow-tipo2;
+            ul{
+                
+                background-color: hsla(241, 75%, 39%, 0.45);
+
+                li{
+                    margin: 7px 7px 7px 7px;
+                    list-style-type: none;
+                    background-color: transparent;
+                    
+                    }
+                a{
+
+                    background-color: transparent;
+
+                    .social_bar_icono{
+
+                        width: $ancho-iconos-social-bar;
+                        height: $alto-iconos-social-bar;
+                        background-color: transparent;
+
+                    
+                        
+                    }
+                     
+
+                }
+            }
+
+
+     }
+
+
+
+}
+        
+
+
+    
+

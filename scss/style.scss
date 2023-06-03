@@ -1,8 +1,8 @@
-header{
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./utilities/mixins";
 
-    background-color: blueviolet;
-   
-    
-    
-
-}
+@import "./layout/header";
+@import "./layout/index-main";
+@import "./layout/biografia-main";
+@import "./layout/footer";
