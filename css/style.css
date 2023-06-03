@@ -155,33 +155,34 @@
   /*70px para compensar header fiex*/
   overflow: hidden;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  /* Medidas y posicion de imagen de fondo 
-    background-image: url("../imagenes/img_form_sucr.jpg"); */
-  background-image: url("../imagenes/img_form_sucr.jpg");
-  background-size: 80%;
-  background-position: left;
+  /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+  background-image: url("../imagenes/img_portada_bio.jpg");
+  /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+  background-size: 85%;
   background-repeat: no-repeat;
-  background-position-x: -100px; }
+  background-position-x: 400px; }
   .biografia_container .contenedor_txt {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width: 100%;
-    grid-row-start: 1;
-    grid-row-end: 8;
-    overflow-y: hidden;
-    margin: 50px 0px 0 100px;
-    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 550px;
     background-color: rgba(5, 90, 55, 0.85);
-    /* Color de fondo + transparencia de la division con rgba */
+    overflow: hidden;
+    margin: 50px 680px 0 0px;
+    padding: 0 30px 0 0;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .biografia_container .contenedor_txt h1 {
-      margin: 0 0 010px;
+      margin: 30px 30px 40px 35px;
       background-color: transparent;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: white; }
     .biografia_container .contenedor_txt p {
-      height: 400px;
-      padding: 40px 20px 20px 20px;
+      height: 70%;
+      padding: 0px 60px 20px 60px;
       background-color: transparent;
       overflow-y: scroll;
       color: white;
