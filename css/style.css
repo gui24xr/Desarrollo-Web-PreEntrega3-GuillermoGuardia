@@ -72,7 +72,7 @@
           width: 54px;
           height: 45px;
           background-color: transparent;
-          margin: -15px 0 0 320px; }
+          margin: -15px 0 0 270px; }
   .header .social_bar {
     display: flex;
     position: fixed;
@@ -346,7 +346,10 @@
       overflow: hidden;
       box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
       .seccion_tour_container .container_fechas_tour .concierto_box:hover {
-        background-color: rgba(34, 9, 100, 0.733); }
+        background-color: rgba(34, 9, 100, 0.733);
+        filter: opacity(0.9);
+        transform: scale(1.04);
+        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
       .seccion_tour_container .container_fechas_tour .concierto_box h2 {
         background-color: transparent;
         color: white;

@@ -26,6 +26,9 @@
         
         &:hover{
             background-color: rgba(34, 9, 100, 0.733);
+            filter: opacity(0.9);
+            transform: scale(1.04);
+            box-shadow: $boxshadow-tipo3
         }
       h2{
             background-color: transparent;
