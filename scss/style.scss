@@ -1,8 +1,11 @@
 @import "./utilities/variables";
 @import "./base/reset";
+@import "./base/typo";
 @import "./utilities/mixins";
 
 @import "./layout/header";
 @import "./layout/index-main";
-@import "./layout/biografia-main";
+@import "./layout/main-biografia";
+@import "./layout/main-suscripcion";
+@import "./layout/main-tour";
 @import "./layout/footer";

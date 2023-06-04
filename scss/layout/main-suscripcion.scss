@@ -1,0 +1,110 @@
+.seccion_suscripcion_container{
+    @include container_secciones(url("../imagenes/img_form_sucr.jpg"));
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px;
+    .formulario_suscripcion{
+ 
+        width: 400px;
+        height: 645px;
+        margin: 0 150px 0 0;
+        overflow: hidden;
+       
+        background-color: rgba(5, 90, 55, 0.45); /* Color de fondo + transparencia de la division con rgba */
+        box-shadow: $boxshadow-tipo1;
+        ul{
+            display: flex;
+            flex-direction: column;
+            margin: 70px 0 0 60px;
+            background-color:transparent;
+            overflow: hidden;
+            
+            
+        li{
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 10px 0px;
+            overflow: hidden;
+            background-color:transparent;
+         
+            h2{
+            background-color:transparent;
+                 
+                    margin: 0 0 50px 0;
+                    font-family: familia_1;
+                    color: #FFFFFF;
+                    letter-spacing: 5px;
+                    text-decoration: none;
+                }
+            label{
+                
+                margin: 0 0 10px 0;
+                
+                background-color: transparent;
+                overflow: hidden;
+                
+                font-family: familia_1;
+                letter-spacing: 2px;
+                color: #FFFFFF;
+                
+                }
+            input{
+                width: 80%;
+                height: 25px;
+                margin: 0 0 10px 0;
+                
+                
+                border-radius: 25px;
+                border-style: none;
+                background-color: #FFFFFF;
+               
+
+                font-family: familia_1;
+                color: #000000;
+                text-decoration: none;
+            }
+            select{
+                width: 80%;
+                height: 25px;
+                margin: 0 0 70px 0;
+                
+                border-radius: 25px;
+                border-style: none;
+                background-color: #FFFFFF;
+                
+
+                text-decoration: none;
+                font-family: familia_1;
+                color: #000000;
+                option{
+                    height: 25px;
+                  
+                    background-color: #FFFFFF;
+                    border-radius: 25px;
+                    border-style: none;
+                    box-shadow: $boxshadow-tipo1;
+                
+                    text-decoration: none;
+                    font-family: familia_1;
+                    color: #000000;
+                }
+            }
+            .boton_aceptar{
+                    width: 130px;
+                    height: 30px;
+                    margin: 0 0 0 80px;
+                    padding-left: 2px;  /* Aceptar alineacion */
+                    border-radius: 25px;
+                    background-color: rgba(30, 78, 236, 0.55);
+                    box-shadow: $boxshadow-tipo1;
+                
+                    font-family: familia_1;
+                    color: #f8f7f7;
+                    font-weight: bold;
+                }
+            }
+
+            }
+        }
+    }

@@ -6,6 +6,22 @@
   box-sizing: border-box;
   background-color: #3d3d3d; }
 
+@font-face {
+  font-family: familia_1;
+  src: url("../fonts/Staatliches-Regular.ttf"); }
+
+@font-face {
+  font-family: familia_2;
+  src: url("../fonts/Staatliches-Regular.ttf"); }
+
+@font-face {
+  font-family: familia_roboto;
+  src: url("../fonts/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: familia_barlow;
+  src: url("../fonts/BarlowCondensed-Regular.ttf"); }
+
 .header {
   display: flex;
   position: fixed;
@@ -188,11 +204,203 @@
       color: white;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
+.seccion_suscripcion_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 92%;
+  height: 600px;
+  margin: 70px 0px 30px 50px;
+  /*70px para compensar header fiex*/
+  overflow: hidden;
+  box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+  background-image: url("../imagenes/img_form_sucr.jpg");
+  /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+  background-size: 80%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-position-x: -100px; }
+  .seccion_suscripcion_container .formulario_suscripcion {
+    width: 400px;
+    height: 645px;
+    margin: 0 150px 0 0;
+    overflow: hidden;
+    background-color: rgba(5, 90, 55, 0.45);
+    /* Color de fondo + transparencia de la division con rgba */
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    .seccion_suscripcion_container .formulario_suscripcion ul {
+      display: flex;
+      flex-direction: column;
+      margin: 70px 0 0 60px;
+      background-color: transparent;
+      overflow: hidden; }
+      .seccion_suscripcion_container .formulario_suscripcion ul li {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 10px 0px;
+        overflow: hidden;
+        background-color: transparent; }
+        .seccion_suscripcion_container .formulario_suscripcion ul li h2 {
+          background-color: transparent;
+          margin: 0 0 50px 0;
+          font-family: familia_1;
+          color: #FFFFFF;
+          letter-spacing: 5px;
+          text-decoration: none; }
+        .seccion_suscripcion_container .formulario_suscripcion ul li label {
+          margin: 0 0 10px 0;
+          background-color: transparent;
+          overflow: hidden;
+          font-family: familia_1;
+          letter-spacing: 2px;
+          color: #FFFFFF; }
+        .seccion_suscripcion_container .formulario_suscripcion ul li input {
+          width: 80%;
+          height: 25px;
+          margin: 0 0 10px 0;
+          border-radius: 25px;
+          border-style: none;
+          background-color: #FFFFFF;
+          font-family: familia_1;
+          color: #000000;
+          text-decoration: none; }
+        .seccion_suscripcion_container .formulario_suscripcion ul li select {
+          width: 80%;
+          height: 25px;
+          margin: 0 0 70px 0;
+          border-radius: 25px;
+          border-style: none;
+          background-color: #FFFFFF;
+          text-decoration: none;
+          font-family: familia_1;
+          color: #000000; }
+          .seccion_suscripcion_container .formulario_suscripcion ul li select option {
+            height: 25px;
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            border-style: none;
+            box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            font-family: familia_1;
+            color: #000000; }
+        .seccion_suscripcion_container .formulario_suscripcion ul li .boton_aceptar {
+          width: 130px;
+          height: 30px;
+          margin: 0 0 0 80px;
+          padding-left: 2px;
+          /* Aceptar alineacion */
+          border-radius: 25px;
+          background-color: rgba(30, 78, 236, 0.55);
+          box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          font-family: familia_1;
+          color: #f8f7f7;
+          font-weight: bold; }
+
+.seccion_tour_container {
+  display: flex;
+  justify-content: flex-end;
+  width: 92%;
+  height: 600px;
+  margin: 70px 0px 30px 50px;
+  /*70px para compensar header fiex*/
+  overflow: hidden;
+  box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+  background-image: url("../imagenes/img_portada_tour.jpg");
+  /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+  background-size: 80%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -40px;
+  align-items: end;
+  justify-content: center;
+  box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+  .seccion_tour_container .container_fechas_tour {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 250px;
+    background-color: rgba(5, 90, 55, 0.85);
+    overflow: hidden;
+    margin: 0px 0px 0 0px;
+    padding: 0 0px 0 0px;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; }
+    .seccion_tour_container .container_fechas_tour .concierto_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      height: 220px;
+      margin: 10px 0 0 20px;
+      padding: 20px 0 0 0;
+      overflow: hidden;
+      box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+      .seccion_tour_container .container_fechas_tour .concierto_box:hover {
+        background-color: rgba(34, 9, 100, 0.733); }
+      .seccion_tour_container .container_fechas_tour .concierto_box h2 {
+        background-color: transparent;
+        color: white;
+        font-family: familia_barlow;
+        font-size: 18px;
+        letter-spacing: 4px;
+        font-weight: bolder; }
+      .seccion_tour_container .container_fechas_tour .concierto_box .flag_tourdate {
+        width: 40px;
+        height: 40px;
+        margin: 20px  0 0PX 0;
+        background: none;
+        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+      .seccion_tour_container .container_fechas_tour .concierto_box h3 {
+        margin: 0px  0 0PX 0;
+        background-color: transparent;
+        font: familia_1;
+        color: white;
+        font-family: familia_barlow;
+        font-size: 18px;
+        letter-spacing: 4px; }
+      .seccion_tour_container .container_fechas_tour .concierto_box h4 {
+        background-color: transparent;
+        font: familia_1;
+        color: white;
+        font-family: familia_barlow;
+        font-size: 16px;
+        font-weight: lighter;
+        letter-spacing: 2px; }
+      .seccion_tour_container .container_fechas_tour .concierto_box h5 {
+        background-color: transparent;
+        font: familia_1;
+        color: white;
+        font-family: familia_barlow;
+        font-size: 16px;
+        font-weight: lighter; }
+      .seccion_tour_container .container_fechas_tour .concierto_box a {
+        margin: 20px 0 0 0;
+        padding: 1px 15px 1px 15px;
+        background-color: rgba(248, 53, 27, 0.836);
+        box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: white;
+        font-family: familia_barlow;
+        font-size: 16px;
+        font-weight: lighter; }
+        .seccion_tour_container .container_fechas_tour .concierto_box a:hover {
+          background-color: rgba(50, 117, 11, 0.733); }
+
 footer {
   display: flex;
   width: 100%;
   height: 210px;
-  padding: 0 0 0 290px;
+  padding: 0 0 0 360px;
   overflow: hidden;
   background-color: black; }
   footer .links_footer {
