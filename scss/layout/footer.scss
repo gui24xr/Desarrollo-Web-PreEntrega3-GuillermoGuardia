@@ -1,20 +1,116 @@
 footer{
 
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 210px;
-    padding: 0 0 0 360px;
+    height: 380px;
+    padding: 0 0 0 0x;
     overflow: hidden;
-    background-color: black;
-        .links_footer{
-        font:bold;
-        color:#FFFFFF;
-        background-color: #000000;
-        font-size: 16px;
-        margin:0 0 0 50px;
-        padding-top: 40px;
-        text-decoration: none;
+    background-color: $color-fondo-nav-bar;
+    .toogle_down{
+        display: flex;
+        width: 100%;
+        height:40px;
+        background-color: $color-fondo-sitio;/*$color-fondo-nav-bar;*/
+        margin: 0 0 0 0;
+        box-shadow: $boxshadow-tipo1;
+    }
+    .div_suscripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:80px;
+        background-color: rgb(2, 48, 21);
+        margin: 0 0 0 0;
+        padding: 0 0 0 20px;
+        box-shadow: $boxshadow-tipo1;
+        h4{
+            margin: 0 20px 0 0px;
+            background-color:transparent;
+            font-family: familia_barlow;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+        .formulario_suscripcion{
+            
+            background-color: transparent;
+            input{
+                width: 300px;
+                height: 40px;
+                padding: 0 0 0 10px;
+                background-color: #FFFFFF;
+                border-style: double;
+                border-color: #FFFFFF;
+                box-shadow: $boxshadow-tipo1;
+            }
+            .button_suscripcion{
+
+                
+                margin: 0 0 0 20px;
+                padding: 7px 40px 7px 40px;
+                font-family: familia_1;
+                font-size: 18px;
+                color: #FFFFFF;
+                background-color: transparent;
+                border-style: double;
+                border-color: #FFFFFF;
+                overflow: hidden;
+                &:hover{
+                background-color: rgba(34, 9, 100, 0.733);
+                transform: scale(1.04);
+                box-shadow: $boxshadow-tipo3;
+                }
+            }
+        }
+
+    }
+    .informacion_pie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        height:260px;
+        background-color: rgb(0, 0, 0); /*$color-fondo-nav-bar;*/
+        margin: 0 0 0 0;
+        padding: 0px 0 0 0;
+        h5{
+            font-family: familia_questrial;
+            font-style: oblique;
+            font-size: smaller;
+            color:#FFFFFF;
+            background-color: transparent;
+            font-size: 20px;
+            font-weight: lighter;
+           
+            
+            
+        }
+        .link_contratacion{
+            
+            margin: 20px 0 0 20px;
+            padding: 7px 40px 7px 40px;
+            font-family: familia_1;
+            font-size: 18px;
+            color: #FFFFFF;
+            background-color: transparent;
+            border-style: double;
+            border-color: #FFFFFF;
+            overflow: hidden;
+            text-decoration: none;
+            &:hover{
+                background-color: rgba(34, 9, 100, 0.733);
+                transform: scale(1.04);
+                box-shadow: $boxshadow-tipo3;
+                }
+
+
+        }
     }
 }
+
 
 

@@ -17,7 +17,9 @@ inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
 
 /*VARIABLES BARRAS DE NAVEGACION Y SOCIAL BAR*/
 $height-nav-bar: 70px;
-$color-fondo-nav-bar:  rgb(49, 44, 44);
+$color-fondo-nav-bar: hsla(241, 75%, 39%, 0.65);  /*rgb(49, 44, 44);*/
+$color-fondo-nav-bar-hover: hsla(240, 5%, 61%, 0.65);
+$color-social-bar: hsla(241, 75%, 39%, 0.45);  /*hsla(241, 75%, 39%, 0.45);*/
 $ancho-iconos-social-bar:38px;
 $alto-iconos-social-bar:38px;
 $posicion-social-bar: 430px 0px 0px 96%;

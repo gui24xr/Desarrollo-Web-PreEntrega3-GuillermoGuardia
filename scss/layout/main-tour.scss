@@ -1,5 +1,5 @@
 .seccion_tour_container{
-    @include container_secciones(url("../imagenes/img_portada_tour.jpg"));
+    @include container_secciones(flex,url("../imagenes/img_portada_tour.jpg"));
     background-size: 80%;
     background-position:right;
     background-repeat: no-repeat;

@@ -1,14 +1,14 @@
 .seccion_suscripcion_container{
-    @include container_secciones(url("../imagenes/img_form_sucr.jpg"));
+    @include container_secciones(flex,url("../imagenes/img_form_sucr.jpg"));
     background-size:80%;
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px;
-    .formulario_suscripcion{
+    .formulario_contacto{
  
-        width: 400px;
+        width: 500px;
         height: 645px;
-        margin: 0 150px 0 0;
+        margin: 0 0px 0 750px;
         overflow: hidden;
        
         background-color: rgba(5, 90, 55, 0.45); /* Color de fondo + transparencia de la division con rgba */
@@ -16,7 +16,8 @@
         ul{
             display: flex;
             flex-direction: column;
-            margin: 70px 0 0 60px;
+            
+            margin: 20px 0 0 30px;
             background-color:transparent;
             overflow: hidden;
             
@@ -24,14 +25,15 @@
         li{
             display: flex;
             flex-direction: column;
-            padding: 0 0 10px 0px;
+            flex-wrap: wrap;
+            padding: 0 0 20px 0px;
             overflow: hidden;
             background-color:transparent;
          
             h2{
             background-color:transparent;
                  
-                    margin: 0 0 50px 0;
+                    margin: 0 0 20px 0;
                     font-family: familia_1;
                     color: #FFFFFF;
                     letter-spacing: 5px;
@@ -50,7 +52,7 @@
                 
                 }
             input{
-                width: 80%;
+                width: 40%;
                 height: 25px;
                 margin: 0 0 10px 0;
                 
@@ -65,9 +67,9 @@
                 text-decoration: none;
             }
             select{
-                width: 80%;
+                width: 40%;
                 height: 25px;
-                margin: 0 0 70px 0;
+                margin: 0 0 10px 0;
                 
                 border-radius: 25px;
                 border-style: none;
@@ -78,8 +80,7 @@
                 font-family: familia_1;
                 color: #000000;
                 option{
-                    height: 25px;
-                  
+                   
                     background-color: #FFFFFF;
                     border-radius: 25px;
                     border-style: none;
@@ -89,6 +90,13 @@
                     font-family: familia_1;
                     color: #000000;
                 }
+            }
+            .input_mensaje{
+
+                height: 100px;
+                padding: 0 0 0 5px;
+                border-radius: 25px;
+
             }
             .boton_aceptar{
                     width: 130px;

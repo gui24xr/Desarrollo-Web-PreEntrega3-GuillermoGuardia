@@ -11,8 +11,9 @@
     
     .header_nav_bar{
         display: flex;
-        max-width: 992px;
+        max-width: 992px; /*OJO CON ESTA PROPIEDAD */
         background-color:transparent;
+       
         .header_nav_logo1{
             width: 52px;
             height: 72px;
@@ -38,8 +39,8 @@
                 list-style-type:none;
                 padding: 18px 7px 40px 7px;
                 background-color:transparent;
+             
                 a{
-
                     width: max-content;
                     font: familia_1;
                     color: #f8f7f7;
@@ -53,7 +54,13 @@
                     font-style:normal;
                     font-weight:400px;
                     font-size: 16px;
+                
+                    &:hover{
+                        background-color: $color-fondo-nav-bar-hover;/* rgba(34, 9, 100, 0.733);*/
+                        transform: scale(1.04);
+                        box-shadow: $boxshadow-tipo3;
                 }
+                }   
                 .header_nav_mxflag{
 
                     width: 54px;
@@ -76,7 +83,7 @@
             box-shadow: $boxshadow-tipo2;
             ul{
                 
-                background-color: hsla(241, 75%, 39%, 0.45);
+                background-color: $color-social-bar; /*hsla(241, 75%, 39%, 0.45);*/
 
                 li{
                     margin: 7px 7px 7px 7px;
@@ -93,6 +100,11 @@
                         width: $ancho-iconos-social-bar;
                         height: $alto-iconos-social-bar;
                         background-color: transparent;
+                        &:hover{
+                            
+                            transform: scale(1.3);
+                           
+                    }
 
                     
                         

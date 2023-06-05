@@ -56,10 +56,10 @@
             
             <div class="seccion_suscripcion_container">
                 
-                <form class="formulario_suscripcion" action="#" method="post">
+                <form class="formulario_contacto" action="#" method="post">
                     <ul>
                         <li>
-                            <h2>SUSCRIPCION</h2>
+                            <h2>CONTRATACIONES</h2>
                         </li>
                         <li>
                             <label for="name">NOMBRE</label>
@@ -82,6 +82,10 @@
                                     <option value="usa">USA</option>
                             </select>
                         </li>
+                        <li>
+                            <label for="mensaje">MENSAJE</label>
+                            <input class ="input_mensaje" type="text"  maxlength="300" id="mensaje" name="user_mensaje">
+                        </li>
                             <li>
                                 <input class="boton_aceptar" type="submit" value="Aceptar" />
                             </li>
@@ -92,11 +96,31 @@
         </main>
 
         <footer>
-            <!-- <img class="logo_pie" src="imagenes/icons/logo1.png" > -->
-            <a class="links_footer" href="#" >@2023 Todos los derechos_reservados.</a>
-            <a class="links_footer" href="#" >Politica de privacidad.</a>
-            <a class="links_footer" href="#" >Terminos de uso.</a>
+            
+            <div class="toogle_down">
+               
+            </div>
+
+            <div class="div_suscripcion">
+                
+                <h4>SUSCRIBETE PARA RECIBIR INFORMACION</h4>
+                
+                <form class="formulario_suscripcion" action="#" method="post">
+                     <input type="email" id="mail" name="user_mail" /> 
+                     <button class="button_suscripcion" type="button">ENVIAR</button>
+                </form>
+
+            </div>
+
+            <div class="informacion_pie">
+                
+                <h5>@ Luis Carlos Gago 2023 .</h5>
+                <h5>Todos los derechos reservados</h5>
+                <a class="link_contratacion" href="#" >CONTRATACIONES</a>
+
+            </div> 
         </footer>
+
 
     </body>
 
