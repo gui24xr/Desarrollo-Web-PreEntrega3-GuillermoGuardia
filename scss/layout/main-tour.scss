@@ -5,12 +5,14 @@
     background-repeat: no-repeat;
     background-position-x: 0px;
     background-position-y: -40px;
-    align-items:end;
-    justify-content: center;
+    
+    justify-content:flex-end;
+    
     box-shadow: $boxshadow-tipo1;
     .container_fechas_tour{
-    @include contenedor_informacion(row,95%,250px,rgba(5, 90, 55, 0.85),0px 0px 0 0px, 0 0px 0 0px);
+    @include contenedor_informacion(row,20%,100%,rgba(5, 90, 55, 0.85),0px 0px 0 0px, 0 0px 0 0px);
     flex-wrap: wrap;
+    overflow-y: scroll;
     
     .concierto_box{
         display: flex;
@@ -18,7 +20,7 @@
         align-items: center;
         width: 200px;
         height: 220px;
-        margin: 10px 0 0 20px;
+        margin: 25px 0 0 25px;
         padding: 20px 0 0 0;
         overflow: hidden;
         box-shadow: $boxshadow-tipo2;

@@ -4,109 +4,105 @@
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px;
+    
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    padding-right: 50px;
+    
     .formulario_contacto{
  
-        width: 500px;
-        height: 645px;
-        margin: 0 0px 0 750px;
-        overflow: hidden;
-       
+            
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        padding: 20px 20px 20px 20px;
+        
         background-color: rgba(5, 90, 55, 0.45); /* Color de fondo + transparencia de la division con rgba */
         box-shadow: $boxshadow-tipo1;
+        
         ul{
             display: flex;
             flex-direction: column;
+            justify-content: start;
             
-            margin: 20px 0 0 30px;
-            background-color:transparent;
-            overflow: hidden;
+            width: 90%;
+            height: 90%;
+            padding: 0 25px 0 0;
             
-            
-        li{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding: 0 0 20px 0px;
-            overflow: hidden;
+
             background-color:transparent;
-         
-            h2{
-            background-color:transparent;
-                 
-                    margin: 0 0 20px 0;
-                    font-family: familia_1;
-                    color: #FFFFFF;
-                    letter-spacing: 5px;
-                    text-decoration: none;
-                }
-            label{
+            overflow-x: hidden;
+            overflow-y: scroll;
+            li{
                 
-                margin: 0 0 10px 0;
+                display: flex;
+                flex-direction: column;
                 
-                background-color: transparent;
-                overflow: hidden;
                 
+                
+                background-color:transparent;
+                h2{
+                background-color:transparent;
+                margin: 0 0 50px 0;
                 font-family: familia_1;
-                letter-spacing: 2px;
                 color: #FFFFFF;
-                
+                letter-spacing: 5px;
+                text-decoration: none;
                 }
-            input{
-                width: 40%;
-                height: 25px;
-                margin: 0 0 10px 0;
-                
-                
-                border-radius: 25px;
-                border-style: none;
-                background-color: #FFFFFF;
-               
-
-                font-family: familia_1;
-                color: #000000;
-                text-decoration: none;
-            }
-            select{
-                width: 40%;
-                height: 25px;
-                margin: 0 0 10px 0;
-                
-                border-radius: 25px;
-                border-style: none;
-                background-color: #FFFFFF;
-                
-
-                text-decoration: none;
-                font-family: familia_1;
-                color: #000000;
-                option{
-                   
-                    background-color: #FFFFFF;
+                label{
+                    margin: 0 0 0px 0;
+                    background-color: transparent;
+                    overflow: hidden;
+                    font-family: familia_1;
+                    letter-spacing: 2px;
+                    color: #FFFFFF;
+                }
+                input{
+                    width: 100%;
+                    height: 25px;
+                    margin: 0 0 10px 0;
                     border-radius: 25px;
                     border-style: none;
-                    box-shadow: $boxshadow-tipo1;
-                
+                    background-color: #FFFFFF;
+                    font-family: familia_1;
+                    color: #000000;
+                    text-decoration: none;
+                    }
+                select{
+                    width: 100%;
+                    height: 25px;
+                    margin: 0 0 10px 0;
+                    border-radius: 25px;
+                    border-style: none;
+                    background-color: #FFFFFF;
                     text-decoration: none;
                     font-family: familia_1;
                     color: #000000;
+                    option{
+                        background-color: #FFFFFF;
+                        border-radius: 25px;
+                        border-style: none;
+                        box-shadow: $boxshadow-tipo1;
+                        text-decoration: none;
+                        font-family: familia_1;
+                        color: #000000;
+                        }
+                    }   
+                .input_mensaje{
+                    height: 120px;
+                    padding: 0 0 0 5px;
+                    border-radius: 25px;
                 }
-            }
-            .input_mensaje{
-
-                height: 100px;
-                padding: 0 0 0 5px;
-                border-radius: 25px;
-
-            }
-            .boton_aceptar{
+                .boton_aceptar{
                     width: 130px;
                     height: 30px;
-                    margin: 0 0 0 80px;
+                    margin: 40px 0 0px 80px;
                     padding-left: 2px;  /* Aceptar alineacion */
                     border-radius: 25px;
                     background-color: rgba(30, 78, 236, 0.55);
                     box-shadow: $boxshadow-tipo1;
-                
                     font-family: familia_1;
                     color: #f8f7f7;
                     font-weight: bold;

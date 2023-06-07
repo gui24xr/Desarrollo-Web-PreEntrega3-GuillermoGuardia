@@ -42,8 +42,7 @@
   overflow: hidden; }
   .header .header_nav_bar {
     display: flex;
-    max-width: 992px;
-    /*OJO CON ESTA PROPIEDAD */
+    /*/*max-width: 992px; /*OJO CON ESTA PROPIEDAD */
     background-color: transparent; }
     .header .header_nav_bar .header_nav_logo1 {
       width: 52px;
@@ -116,7 +115,7 @@
   display: flex;
   width: 100%;
   height: 720px;
-  margin: 0px 0 0 0;
+  margin: 20px 0 0 0;
   /*70px 0 10px 0; 70px para compensar header fiex*/
   padding-bottom: 30px;
   overflow: hidden;
@@ -182,8 +181,10 @@
     /*0px 0px 10px 40px;*/
     overflow: hidden;
     background-image: url("../imagenes/img_portada_index.jpg");
+    background-repeat: no-repeat;
     background-size: contain;
     /* 110%;
+           
             background-position:right;
             background-repeat: no-repeat;
             background-position-x: -30px;
@@ -213,9 +214,9 @@
 
 .biografia_container {
   display: flex;
-  width: 92%;
-  height: 600px;
-  margin: 70px 0px 30px 50px;
+  width: 96%;
+  height: 650px;
+  margin: 70px auto 30px auto;
   /*70px para compensar header fiex*/
   overflow: hidden;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -232,8 +233,8 @@
   .biografia_container .contenedor_txt {
     display: flex;
     flex-direction: column;
-    width: 540px;
-    height: 550px;
+    width: 45%;
+    height: calc(100% - 50px);
     background-color: rgba(5, 90, 55, 0.85);
     overflow: hidden;
     margin: 50px 0px 0 100px;
@@ -254,9 +255,9 @@
 
 .seccion_suscripcion_container {
   display: flex;
-  width: 92%;
-  height: 600px;
-  margin: 70px 0px 30px 50px;
+  width: 96%;
+  height: 650px;
+  margin: 70px auto 30px auto;
   /*70px para compensar header fiex*/
   overflow: hidden;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -270,44 +271,50 @@
   background-size: 80%;
   background-position: left;
   background-repeat: no-repeat;
-  background-position-x: -100px; }
+  background-position-x: -100px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 50px; }
   .seccion_suscripcion_container .formulario_contacto {
-    width: 500px;
-    height: 645px;
-    margin: 0 0px 0 750px;
-    overflow: hidden;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 20px 20px 20px;
     background-color: rgba(5, 90, 55, 0.45);
     /* Color de fondo + transparencia de la division con rgba */
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .seccion_suscripcion_container .formulario_contacto ul {
       display: flex;
       flex-direction: column;
-      margin: 20px 0 0 30px;
+      justify-content: start;
+      width: 90%;
+      height: 90%;
+      padding: 0 25px 0 0;
       background-color: transparent;
-      overflow: hidden; }
+      overflow-x: hidden;
+      overflow-y: scroll; }
       .seccion_suscripcion_container .formulario_contacto ul li {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0 0 20px 0px;
-        overflow: hidden;
         background-color: transparent; }
         .seccion_suscripcion_container .formulario_contacto ul li h2 {
           background-color: transparent;
-          margin: 0 0 20px 0;
+          margin: 0 0 50px 0;
           font-family: familia_1;
           color: #FFFFFF;
           letter-spacing: 5px;
           text-decoration: none; }
         .seccion_suscripcion_container .formulario_contacto ul li label {
-          margin: 0 0 10px 0;
+          margin: 0 0 0px 0;
           background-color: transparent;
           overflow: hidden;
           font-family: familia_1;
           letter-spacing: 2px;
           color: #FFFFFF; }
         .seccion_suscripcion_container .formulario_contacto ul li input {
-          width: 40%;
+          width: 100%;
           height: 25px;
           margin: 0 0 10px 0;
           border-radius: 25px;
@@ -317,7 +324,7 @@
           color: #000000;
           text-decoration: none; }
         .seccion_suscripcion_container .formulario_contacto ul li select {
-          width: 40%;
+          width: 100%;
           height: 25px;
           margin: 0 0 10px 0;
           border-radius: 25px;
@@ -335,13 +342,13 @@
             font-family: familia_1;
             color: #000000; }
         .seccion_suscripcion_container .formulario_contacto ul li .input_mensaje {
-          height: 100px;
+          height: 120px;
           padding: 0 0 0 5px;
           border-radius: 25px; }
         .seccion_suscripcion_container .formulario_contacto ul li .boton_aceptar {
           width: 130px;
           height: 30px;
-          margin: 0 0 0 80px;
+          margin: 40px 0 0px 80px;
           padding-left: 2px;
           /* Aceptar alineacion */
           border-radius: 25px;
@@ -353,9 +360,9 @@
 
 .seccion_tour_container {
   display: flex;
-  width: 92%;
-  height: 600px;
-  margin: 70px 0px 30px 50px;
+  width: 96%;
+  height: 650px;
+  margin: 70px auto 30px auto;
   /*70px para compensar header fiex*/
   overflow: hidden;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -371,27 +378,27 @@
   background-repeat: no-repeat;
   background-position-x: 0px;
   background-position-y: -40px;
-  align-items: end;
-  justify-content: center;
+  justify-content: flex-end;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
   .seccion_tour_container .container_fechas_tour {
     display: flex;
     flex-direction: row;
-    width: 95%;
-    height: 250px;
+    width: 20%;
+    height: 100%;
     background-color: rgba(5, 90, 55, 0.85);
     overflow: hidden;
     margin: 0px 0px 0 0px;
     padding: 0 0px 0 0px;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    overflow-y: scroll; }
     .seccion_tour_container .container_fechas_tour .concierto_box {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 200px;
       height: 220px;
-      margin: 10px 0 0 20px;
+      margin: 25px 0 0 25px;
       padding: 20px 0 0 0;
       overflow: hidden;
       box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
@@ -451,9 +458,9 @@
 
 .galeria_imagenes_container {
   display: grid;
-  width: 92%;
-  height: 600px;
-  margin: 70px 0px 30px 50px;
+  width: 96%;
+  height: 650px;
+  margin: 70px auto 30px auto;
   /*70px para compensar header fiex*/
   overflow: hidden;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -476,7 +483,8 @@
     transition: transform 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .galeria_imagenes_container .grid-item:hover {
       /*ilter: opacity(0.9);*/
       background-blend-mode: soft-light;
@@ -572,7 +580,7 @@ footer {
       font-size: 20px;
       font-weight: lighter; }
     footer .informacion_pie .link_contratacion {
-      margin: 20px 0 0 20px;
+      margin: 60px 0 0 20px;
       padding: 7px 40px 7px 40px;
       font-family: familia_1;
       font-size: 18px;
