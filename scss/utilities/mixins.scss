@@ -55,7 +55,7 @@
 
 
 /* CONTENEDOR UTILIZADO PARA CONTENER INFORMACION EN ALGUNAS SECCIONES COMO BIOGRAFIA Y TOUR */
-@mixin contenedor_informacion($direccion-flex,$width,$height,$backgroundcolor,$margin,$padding){
+@mixin contenedor_informacion($direccion-flex,$width,$height,$backgroundcolor){
     
     display: flex;
     flex-direction: $direccion-flex;
@@ -63,8 +63,6 @@
     height: $height;
     background-color: $backgroundcolor;
     overflow: hidden;
-    margin: $margin;
-    padding: $padding;
     box-shadow: $boxshadow-tipo1;
 }
 
