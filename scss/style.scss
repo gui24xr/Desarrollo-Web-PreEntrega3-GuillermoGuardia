@@ -6,9 +6,14 @@
 @import "./layout/header";
 @import "./layout/index-main";
 @import "./layout/main-biografia";
-@import "./layout/main-suscripcion";
-@import "./layout/main-tour";
+@import "./layout/main-contrataciones";
+@import "./layout/main-conciertos";
 @import "./layout/main-galeria";
 
-@import "./layout/footer";/*
-@import "./layout/media768";*/
+@import "./layout/footer";
+@import "./layout/media768-header";
+@import "./layout/media768-footer";
+@import "./layout/media768-main-biografia";
+@import "./layout/media768-main-contrataciones";
+@import "./layout/media768-main-conciertos";
+@import "./layout/media768-main-galeria";

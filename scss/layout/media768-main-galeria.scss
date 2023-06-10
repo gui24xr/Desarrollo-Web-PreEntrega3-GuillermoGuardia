@@ -1,0 +1,21 @@
+
+@media (max-width: 768px){
+
+    .galeria_imagenes_container{
+
+        margin-top: $ancho-nav-bar-media;
+        margin-bottom: 0;
+        height: 880px;
+
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        grid-auto-rows: minmax(880px, auto);
+        gap: 15px;
+       
+        
+     }
+
+
+       
+}
+
+

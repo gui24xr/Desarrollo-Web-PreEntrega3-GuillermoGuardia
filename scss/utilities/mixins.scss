@@ -66,3 +66,25 @@
     box-shadow: $boxshadow-tipo1;
 }
 
+
+
+/* CONTENEDOR DE LOS MAIN DE SECCIONES (EXCEPTO INDEX)*/
+@mixin container_secciones_media768($tipo-display,$background-pic-seccion) {
+
+    display: $tipo-display;
+    width: 96%;
+    height: 650px;
+    margin: 70px auto 30px auto; /*70px para compensar header fiex*/
+    overflow: hidden;   
+    box-shadow: $boxshadow-tipo1;
+    /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+    background-image: $background-pic-seccion;
+    /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+}
+
+
+
