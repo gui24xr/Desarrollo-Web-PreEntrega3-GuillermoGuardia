@@ -71,4 +71,82 @@
     }
 
 }
-      
+
+
+/*-------------- HEADER 576 ----------------------------*/
+
+
+@media (max-width: 576px){
+
+    .header{
+        
+        .header_nav_bar{
+            height: $ancho-nav-bar-media;
+            justify-content:space-between;
+            background-color:aquamarine;
+            
+            .header_nav_logo1{
+            order: 2;
+            margin: 0 0px 0 0px;
+            align-self:stretch;
+            width:$height-nav-bar;
+            height: 50px;
+            box-shadow: $boxshadow-tipo1;
+            }
+            
+            .header_nav_toggle{
+                order: 3;
+                display: block;
+                margin: 0 20px 0 0px;
+                box-shadow: $boxshadow-tipo1;
+            }
+            
+            .nav_lista_secciones_sitio{
+                order: 4;
+                position:fixed;
+                justify-content:center;
+                top: $ancho-nav-bar-media;
+                width: 100%;
+                height: calc(100%-$height-nav-bar);
+                left: 100%;
+                transition: left 0.3s;
+                background-color: $color-fondo-nav-bar-media;-webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                
+                ul{
+                    
+                    width: 90%;
+                    height: 500px;
+                    margin-top: 30px;
+                    flex-direction: column;
+                    justify-content: center;
+                    box-shadow: $boxshadow-tipo1;
+                    li{
+                        a{
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+            
+            .header_nav_mxflag{
+                order: 1;
+                height: 60px;
+                margin: 0 0 0 30px;
+                box-shadow: $boxshadow-tipo1;
+            }
+
+            .nav_lista_secciones_sitio_visible{
+                left: 0;
+            }
+                           
+        }
+
+        
+        .social_bar{
+            
+            background-color: blueviolet;
+        }
+    }
+
+}
