@@ -1,6 +1,6 @@
 .header{
    
-
+  
    /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */
     .header_nav_bar{
         position: fixed;
@@ -35,7 +35,8 @@
             display: flex;
             height:100%;
             justify-content:start;
-            justify-self: flex-start; flex-grow: 8;
+            justify-self: flex-start; 
+            flex-grow: 8;
             margin: 0 0px 0 0;
             background-color:transparent;
             
@@ -78,25 +79,54 @@
         }
     }
 
-
-    /* SECCION BARRA DE NAVEGACION SUPERIOR */
-
     .social_bar{
 
-        background-color:$color-fondo-nav-bar;
+        position: fixed;
+        
+        left: $posicion-x-social-bar;
+        top: $posicion-y-social-bar;
+        background-color:$color-social-bar;
+        border-radius: 25px;
+        box-shadow: $boxshadow-tipo1;
+        
         nav{
-            background-color:$color-fondo-nav-bar;
+            background-color: transparent;
+            
             ul{
-                
-                background-color:transparent;
+                display: flex;
+                flex-direction: column;
+                background-color: transparent;
+                text-decoration: none;
+                padding: 5px 5px 5px 5px;
+               
 
+                li{
+                    list-style-type:none;
+                    background-color:transparent;
+                    
+                    a{
+                        background-color:transparent;
+                        
+                        img{
+                            background-color: transparent;
+                            width: $alto-iconos-social-bar;
+                            height: $ancho-iconos-social-bar;
+                           &:hover{
+                                background-blend-mode:soft-light;
+                                transform: scale(1.3);
+                            }
+                            
+                        }
+
+                    } 
+                }
             }
         }
-        
-      
-        
+
     }
 
+
+    
 }
     
 

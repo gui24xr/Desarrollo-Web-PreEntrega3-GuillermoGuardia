@@ -1,10 +1,10 @@
 .seccion_tour_container{
     @include container_secciones(flex,url("../imagenes/img_portada_tour.jpg"));
-    background-size: 80%;
+    background-size:cover;
     background-position:right;
     background-repeat: no-repeat;
-    background-position-x: 0px;
-    background-position-y: -40px;
+    /*background-position-x: 0px;
+    background-position-y: -40px;*/
     
     justify-content:flex-end;
     

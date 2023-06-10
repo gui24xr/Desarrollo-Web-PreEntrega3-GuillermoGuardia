@@ -1,7 +1,7 @@
 /*VARIBLES GENERALES SITIO */
 /*VARIABLES BARRAS DE NAVEGACION Y SOCIAL BAR*/
 /*rgb(49, 44, 44);*/
-/*hsla(241, 75%, 39%, 0.45);*/
+/*hsla(241, 75%, 39%, 0.45);  hsla(241, 75%, 39%, 0.45);*/
 * {
   margin: 0;
   padding: 0;
@@ -32,8 +32,7 @@
 /* CONTENEDOR GRID DE GALERIA */
 /* CONTENEDOR UTILIZADO PARA CONTENER INFORMACION EN ALGUNAS SECCIONES COMO BIOGRAFIA Y TOUR */
 .header {
-  /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */
-  /* SECCION BARRA DE NAVEGACION SUPERIOR */ }
+  /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */ }
   .header .header_nav_bar {
     position: fixed;
     top: 0;
@@ -97,11 +96,32 @@
       align-self: center;
       margin-right: 10px; }
   .header .social_bar {
-    background-color: rgba(27, 25, 174, 0.65); }
+    position: fixed;
+    left: 96%;
+    top: 400px;
+    background-color: rgba(248, 248, 248, 0.3);
+    border-radius: 25px;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .header .social_bar nav {
-      background-color: rgba(27, 25, 174, 0.65); }
+      background-color: transparent; }
       .header .social_bar nav ul {
-        background-color: transparent; }
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        text-decoration: none;
+        padding: 5px 5px 5px 5px; }
+        .header .social_bar nav ul li {
+          list-style-type: none;
+          background-color: transparent; }
+          .header .social_bar nav ul li a {
+            background-color: transparent; }
+            .header .social_bar nav ul li a img {
+              background-color: transparent;
+              width: 42px;
+              height: 42px; }
+              .header .social_bar nav ul li a img:hover {
+                background-blend-mode: soft-light;
+                transform: scale(1.3); }
 
 .index_container_ppal {
   display: flex;
@@ -174,7 +194,7 @@
     overflow: hidden;
     background-image: url("../imagenes/img_portada_index.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     /* 110%;
            
             background-position:right;
@@ -219,20 +239,20 @@
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px; */
-  background-size: 85%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: 400px;
+  /*background-position-x: 400px;*/
   align-items: end; }
   .biografia_container .contenedor_txt {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 35%;
     height: 93%;
     background-color: rgba(5, 90, 55, 0.85);
     overflow: hidden;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     justify-content: space-evenly;
-    margin: 50px 0px 0 100px; }
+    margin: 50px 0px 0 50px; }
     .biografia_container .contenedor_txt h1 {
       padding-left: 30px;
       background-color: transparent;
@@ -262,33 +282,30 @@
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px; */
-  background-size: 80%;
-  background-position: left;
+  background-size: cover;
+  /*background-position:left;*/
   background-repeat: no-repeat;
-  background-position-x: -100px;
+  /*background-position-x: -100px;*/
+  background-position-x: right;
+  background-position-y: center;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  padding-right: 50px; }
+  justify-content: flex-start; }
   .seccion_suscripcion_container .formulario_contacto {
-    width: 35%;
+    width: 34%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 20px 20px 20px 20px;
     background-color: rgba(5, 90, 55, 0.45);
     /* Color de fondo + transparencia de la division con rgba */
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .seccion_suscripcion_container .formulario_contacto ul {
       display: flex;
       flex-direction: column;
-      justify-content: start;
-      width: 90%;
+      justify-content: end;
+      width: 80%;
       height: 90%;
-      padding: 0 25px 0 0;
-      background-color: transparent;
-      overflow-x: hidden;
-      overflow-y: scroll; }
+      background-color: transparent; }
       .seccion_suscripcion_container .formulario_contacto ul li {
         display: flex;
         flex-direction: column;
@@ -340,11 +357,11 @@
           padding: 0 0 0 5px;
           border-radius: 25px; }
         .seccion_suscripcion_container .formulario_contacto ul li .boton_aceptar {
-          width: 130px;
+          width: 40%;
           height: 30px;
-          margin: 40px 0 0px 80px;
-          padding-left: 2px;
-          /* Aceptar alineacion */
+          /*margin: 40px 0 0px 0px;*/
+          margin-top: 40px;
+          align-self: center;
           border-radius: 25px;
           background-color: rgba(30, 78, 236, 0.55);
           box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -367,11 +384,11 @@
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px; */
-  background-size: 80%;
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  background-position-x: 0px;
-  background-position-y: -40px;
+  /*background-position-x: 0px;
+    background-position-y: -40px;*/
   justify-content: flex-end;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
   .seccion_tour_container .container_fechas_tour {
@@ -465,8 +482,8 @@
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px; */
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-auto-rows: minmax(600px, auto);
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-auto-rows: minmax(690px, auto);
   gap: 15px; }
   .galeria_imagenes_container .grid-item {
     display: flex;
@@ -488,6 +505,109 @@
       -moz-border-radius: 0px 0px 139px 0px;
       -webkit-border-radius: 0px 0px 139px 0px;
       border: 0px solid #000000; }
+
+/*------------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* estp definelo azul*/
+  overflow: hidden;
+  background-color: rgba(27, 25, 174, 0.65); }
+  footer .toogle_down {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: #3d3d3d;
+    /*$color-fondo-nav-bar;*/
+    margin: 0 0 0 0;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    footer .toogle_down a {
+      background-color: transparent; }
+      footer .toogle_down a .icono_abajo {
+        width: 40px;
+        height: 40px;
+        background: none;
+        color: #FFFFFF; }
+  footer .div_suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 72px;
+    background-color: #023015;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    footer .div_suscripcion h4 {
+      margin: 0 20px 0 0px;
+      background-color: transparent;
+      font-family: familia_barlow;
+      color: white;
+      font-size: 16px;
+      letter-spacing: 3px; }
+    footer .div_suscripcion .formulario_suscripcion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: transparent; }
+      footer .div_suscripcion .formulario_suscripcion input {
+        width: 250px;
+        height: 30px;
+        background-color: #FFFFFF;
+        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+      footer .div_suscripcion .formulario_suscripcion .button_suscripcion {
+        margin-left: 15px;
+        padding: 2px 32px 2px 32px;
+        font-family: familia_1;
+        font-size: 18px;
+        color: #FFFFFF;
+        background-color: transparent;
+        border-style: double;
+        border-color: #FFFFFF;
+        overflow: hidden; }
+        footer .div_suscripcion .formulario_suscripcion .button_suscripcion:hover {
+          background-color: rgba(34, 9, 100, 0.733);
+          transform: scale(1.04);
+          box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+  footer .informacion_pie {
+    display: flex;
+    flex-direction: column;
+    height: 240px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    /*$color-fondo-nav-bar;*/ }
+    footer .informacion_pie .leyendas_pie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      background-color: transparent; }
+      footer .informacion_pie .leyendas_pie p {
+        font-family: 'Courier New', Courier, monospace;
+        color: #FFFFFF;
+        background-color: transparent;
+        font-size: medium; }
+    footer .informacion_pie .link_contratacion {
+      display: flex;
+      justify-content: center;
+      background-color: transparent;
+      margin-bottom: 50px; }
+      footer .informacion_pie .link_contratacion a {
+        padding: 5px 35px 5px 35px;
+        font-family: familia_1;
+        font-size: 18px;
+        color: #FFFFFF;
+        background-color: transparent;
+        border-style: solid;
+        border-color: #FFFFFF;
+        overflow: hidden;
+        text-decoration: none; }
+        footer .informacion_pie .link_contratacion a:hover {
+          background-color: rgba(34, 9, 100, 0.733);
+          transform: scale(1.04);
+          box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
 
 footer {
   display: flex;
@@ -591,27 +711,5 @@ footer {
           transform: scale(1.04);
           box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
 
-.social_bar {
-  z-index: 1;
-  display: flex;
-  position: fixed;
-  width: 180px;
-  margin: 400px 0px 0px 96%;
-  /*340px 0px 0px 96%;*/
-  background-color: transparent;
-  box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-  .social_bar ul {
-    background-color: rgba(27, 25, 174, 0.45);
-    /*hsla(241, 75%, 39%, 0.45);*/ }
-    .social_bar ul li {
-      margin: 7px 7px 7px 7px;
-      list-style-type: none;
-      background-color: transparent; }
-    .social_bar ul a {
-      background-color: transparent; }
-      .social_bar ul a .social_bar_icono {
-        width: 38px;
-        height: 38px;
-        background-color: transparent; }
-        .social_bar ul a .social_bar_icono:hover {
-          transform: scale(1.3); }
+/*
+@import "./layout/media768";*/

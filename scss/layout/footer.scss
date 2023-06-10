@@ -36,7 +36,7 @@ footer{
         align-items: center;
         width: 100%;
         min-height: 72px;
-        background-color: rgb(2, 48, 21);
+        background-color: $color-div-suscripcion;
         box-shadow: $boxshadow-tipo1;
         
         h4{
@@ -139,51 +139,5 @@ footer{
     
 
     
-    .social_bar{
-        z-index: 1;
-        display: flex;
-        position: fixed;
-        width: 180px;
-        margin: $posicion-social-bar; /*340px 0px 0px 96%;*/
-        background-color: transparent;
-        box-shadow: $boxshadow-tipo2;
-        ul{
-            
-            background-color: $color-social-bar; /*hsla(241, 75%, 39%, 0.45);*/
-
-            li{
-                margin: 7px 7px 7px 7px;
-                list-style-type: none;
-                background-color: transparent;
-                
-                }
-            a{
-
-                background-color: transparent;
-
-                .social_bar_icono{
-
-                    width: $ancho-iconos-social-bar;
-                    height: $alto-iconos-social-bar;
-                    background-color: transparent;
-                    &:hover{
-                        
-                        transform: scale(1.3);
-                       
-                }
-
-                
-                    
-                }
-                 
-
-            }
-        }
-
-
- }
-
-
-
-
+   
 
