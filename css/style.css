@@ -856,16 +856,16 @@ footer {
       height: 55%;
       margin-left: 0; } }
 
-/* MEDIA 375 ---------------------------------*/
+/* MEDIA 414 ---------------------------------*/
 @media (max-width: 414px) {
   .biografia_container {
     background-size: 140%;
     margin-bottom: 0;
-    height: 580px;
-    background-position-x: 0px; }
+    height: 620px;
+    background-position-x: -80px; }
     .biografia_container .contenedor_txt {
       width: 100%;
-      height: 80%;
+      height: 55%;
       margin-left: 0; } }
 
 @media (max-width: 768px) {
@@ -879,14 +879,32 @@ footer {
     justify-content: flex-end; }
     .contrataciones_container .formulario_contacto {
       width: 80%;
-      height: 60%;
+      height: 90%;
       background-color: rgba(248, 248, 248, 0.3); } }
+
+@media (max-width: 414px) {
+  .contrataciones_container {
+    background-size: 280%;
+    margin-bottom: 0;
+    height: 620px;
+    background-position-x: -300px; }
+    .contrataciones_container .formulario_contacto {
+      width: 80%;
+      height: 98%; } }
 
 @media (max-width: 768px) {
   .seccion_conciertos_container {
     margin-bottom: 0;
     height: 880px;
     background-position-x: -300px; } }
+
+/* MEDIA 414 ---------------------------------*/
+@media (max-width: 414px) {
+  .seccion_conciertos_container {
+    background-size: 200%;
+    margin-bottom: 0;
+    height: 620px;
+    background-position-x: -200px; } }
 
 @media (max-width: 768px) {
   .galeria_imagenes_container {
@@ -895,4 +913,14 @@ footer {
     height: 880px;
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     grid-auto-rows: minmax(880px, auto);
+    gap: 15px; } }
+
+/* MEDIA 414 ---------------------------------*/
+@media (max-width: 414px) {
+  .galeria_imagenes_container {
+    margin-top: 70px;
+    margin-bottom: 0;
+    height: 620px;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-auto-rows: minmax(310px, auto);
     gap: 15px; } }

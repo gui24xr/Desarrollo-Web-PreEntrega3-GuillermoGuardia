@@ -15,15 +15,36 @@
         .formulario_contacto{
 
             width: 80%;
-            height: 60%;
+            height: 90%;
             background-color: $color-social-bar; 
         }
 
 
     }
 
-
        
 }
+
+
+@media (max-width: 414px){
+
+    .contrataciones_container{
+        
+        background-size:280%;
+        margin-bottom: 0;
+        height: 620px;
+        background-position-x: -300px;
+       
+         
+            .formulario_contacto{
+
+                width: 80%;
+                height: 98%;
+                
+            }
+
+        }
+    }
+
 
 
