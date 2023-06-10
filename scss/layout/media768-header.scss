@@ -84,14 +84,14 @@
         
         .header_nav_bar{
             height: $ancho-nav-bar-media576;
-            background-color:rgba(6, 77, 41,0.5);
+          
             
             .header_nav_logo1{
             order: 2;
             margin: 0 0px 0 0px;
             align-self:stretch;
-            width:$ancho-nav-bar-media576;
-            height: 80px;
+            width:60PX;
+            height: 75px;
             box-shadow: none;
            
             }
@@ -135,6 +135,7 @@
         .social_bar{
             
             background-color: rgb(36, 255, 237);
+            display: none;
         }
     }
 
