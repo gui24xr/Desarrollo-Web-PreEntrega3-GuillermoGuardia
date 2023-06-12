@@ -25,11 +25,16 @@
 
 
         .header_nav_toggle{
+            
             display: none;
             color:white;
-            font-size: 60px;
+            font-size: 80px;
+            font-weight: bolder;
+            background: transparent;
             border: none;
-            background:none;
+            &:hover{
+                color: $color-fondo-nav-bar-media;
+            }
         }
 
         .nav_lista_secciones_sitio{
@@ -90,13 +95,17 @@
 
     .social_bar{
 
+
         position: fixed;
         
         left: $posicion-x-social-bar;
         top: $posicion-y-social-bar;
+        transition: left 0.8s;
         background-color:$color-social-bar;
         border-radius: 25px;
         box-shadow: $boxshadow-tipo1;
+
+        
         
         nav{
             background-color: transparent;
@@ -134,20 +143,24 @@
 
     }
 
-
     
+    .social_bar_visible{
+
+       left: 100%;
+    }
+
+
+    .boton_activar_social_bar{
+         
+        @include estilo_boton_redondo_transparente;
+        position:fixed; 
+        left: $posicion-x-boton-activar-social-bar;
+        top: $posicion-y-boton-activar-social-bar;
+    }
+
+
 }
     
 
 
 
-@media (max-width: 414px){
-
-    .header{
-        
-            .header_nav_var{
-
-        background-color: black;
-        }
-        }
-    }

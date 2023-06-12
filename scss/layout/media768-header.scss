@@ -90,7 +90,7 @@
             order: 2;
             margin: 0 0px 0 0px;
             align-self:stretch;
-            width:60PX;
+            width:45PX;
             height: 75px;
             box-shadow: none;
            
@@ -142,13 +142,3 @@
 }
 
 
-@media (max-width: 414px){
-
-    .header{
-        
-            .header_nav_var{
-
-        background-color: black;
-        }
-        }
-    }

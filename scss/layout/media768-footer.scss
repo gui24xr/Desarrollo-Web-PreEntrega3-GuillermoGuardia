@@ -4,10 +4,10 @@
 
   footer{
         .div_suscripcion{
-            display: none;
+            /*display: none;*/
             position: fixed;
             top: 200px;
-            left: 70%;
+            left: 100%;
             transition: left 0.3s;
             height: 220px;
             flex-direction: column;
@@ -19,6 +19,7 @@
             h4{
                 font-size: 26px;
             }
+            
             .formulario_suscripcion{
                 flex-wrap: nowrap;
                 input{
@@ -27,13 +28,15 @@
                 }
 
             }
-
-            .div_suscripcion_visible{
-                left: 20%;
-            }
-
+        }
+        
+        .div_suscripcion_visible{
+            display: block;
+            left:0;
         }
 
     }
+
 }
+
       

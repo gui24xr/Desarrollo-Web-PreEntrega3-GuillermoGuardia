@@ -20,9 +20,9 @@
                 
                 <img class="header_nav_logo1" src="imagenes/icons/logo1.png" >
                 
-                 <button class="header_nav_toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
-     
-                <nav class="nav_lista_secciones_sitio">
+                <button class="header_nav_toggle">≡</button>
+                
+                 <nav class="nav_lista_secciones_sitio">
 
                     <ul>
                         <li><a  href="index.html" >INICIO</a></li>
@@ -41,7 +41,7 @@
             
             <section class="social_bar">
                 
-                <nav>
+                 <nav>
                     <ul>
                         <li><a href="https://www.instagram.com/"  target="_blank"><img class="social_bar_icono" src="imagenes/icons/ico_insta2.png" width="45" height="45"></a></li>
                         <li><a href="https://twitter.com/twitterlatam?lang=es" target="_blank"><img class="social_bar_icono" src="imagenes/icons/ico_twitter.png" width="45" height="45"></a></li>
@@ -50,9 +50,11 @@
                         <li><a href="https://www.youtube.com/" target="_blank"><img class="social_bar_icono" src="imagenes/icons/ico_yt.png" width="45" height="45"></a></li>
                         <li><a href="https://open.spotify.com/search/luis%20carlos%20gago" target="_blank"><img class="social_bar_icono" src="imagenes/icons/ico_spo.png" width="45" height="45"></a></li>
                     </ul>
+
                 </nav>
             
             </section>
+
           
             
         </header>
@@ -60,57 +62,58 @@
      
         <main class="main">
             
-            <!-- SECCION PORTADA PRINCIPAL IMAGEN Y PREVIWS SPOTIFY ---------------------------------->
+        
             <div class="index_container_ppal">
             
-                <div class="aside_container">
-                                  
-                    
+                <div class="spoty_container">
                     <iframe class=spoty_2 style="border-radius:12px" src="https://open.spotify.com/embed/track/6HEp2LxIPMC5Qj7l6spbmW?utm_source=generator&theme=0"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    
                     <iframe class=spoty_1 style="border-radius:12px" src="https://open.spotify.com/embed/track/3Tes7e00M7AyeCUyknznel?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                
-                   <!-- <a class = link_suscripcion href="pages/suscripcion.html">SUSCRIPCION</a>
-                 
-                    <a class = link_contrataciones href="pages/suscripcion.html">CONTRATACIONES</a>
-                 -->
-                </div> 
-                 
-
-                <div class="foto_portada_container"> 
-                    
-                    <img class=logo_largo_blanco src="imagenes/icons/logotipo_lc01.png"> 
-                    <iframe class=spoty_1 style="border-radius:12px" src="https://open.spotify.com/embed/track/6HEp2LxIPMC5Qj7l6spbmW?utm_source=generator&theme=0"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    
-                    <iframe class=spoty_2 style="border-radius:12px" src="https://open.spotify.com/embed/track/3Tes7e00M7AyeCUyknznel?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                 
-                 </div> 
-                
-        </div>
-
-
-
-
+                </div>
+           
+            </div>
 
         </main>
-  
-        <footer id="seccion_footer">
-            
-            <section class="toogle_down">
+
+
+        <aside>
                 
-                <a href="#seccion_footer" ><img class="icono_abajo" src="imagenes/icons/ico_abajo.png"></img></a>
+                <div class="portada_intro">
+                    <button class="close_intro_toggle">✖</button>
+                    <img class="logo_intro" src="imagenes/icons/logotipo_lc01.png"> 
+                </div>
+
+                <div class="portada_noticias">
+                    <button class="close_noticias_toggle">✖</button>
+                    <p>En Construccion</p>
+                    </p> 
+                </div>
+
+        
+        </aside>
+  
+        
+        <footer class="seccion_footer">
             
+            <section class="menu_controls_footer">
+                
+                <button class="intro_toggle">≡ INTRO</button>     
+                <button class="noticias_toggle">≡ NOTICIAS</button>
+                <button class="boton_activar_suscripcion">SUSCRIBIR</button>
+                <button class="boton_activar_spoty">♫</button>
+                <button class="boton_activar_social_bar">≡</button>
+             
             </section>
 
-            
             <section class="div_suscripcion">
                 
-                <h4>SUSCRIBETE PARA RECIBIR INFORMACION</h4>
+                <p>SUSCRIBETE PARA RECIBIR INFORMACION</p>
                 
                 <form class="formulario_suscripcion" action="#" method="post">
                      <input type="email" id="mail" name="user_mail" /> 
                      <button class="button_suscripcion" type="button">SUSCRIBIR</button>
                 </form>
+
+                <div class="link_contratacion"> <a  href="pages/contrataciones.html" >CONTRATACIONES</a></div>
 
             </section>
 
@@ -122,8 +125,6 @@
                      <p>Todos los derechos reservados.</p>
                 </div>
                 
-                <div class="link_contratacion"> <a  href="pages/contrataciones.html" >CONTRATACIONES</a></div>
-            
             </section> 
 
         </footer>

@@ -1,7 +1,7 @@
 .galeria_imagenes_container{
     @include container_secciones(grid,none);
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    grid-auto-rows: minmax(690px, auto);
+    grid-auto-rows: minmax(620px, auto);
     gap: 15px;
     .grid-item {
         display: flex;
