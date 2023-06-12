@@ -4,7 +4,7 @@
 @import "./utilities/mixins";
 
 @import "./layout/header";
-@import "./layout/index-main";
+@import "./layout/main-index";
 @import "./layout/main-biografia";
 @import "./layout/main-contrataciones";
 @import "./layout/main-conciertos";
@@ -14,7 +14,9 @@
 
 @import "./layout/footer";
 @import "./layout/media768-header";
+@import "./layout/media768-aside";
 @import "./layout/media768-footer";
+@import "./layout/media768-main-index";
 @import "./layout/media768-main-biografia";
 @import "./layout/media768-main-contrataciones";
 @import "./layout/media768-main-conciertos";

@@ -1,20 +1,5 @@
-/*@media (max-width: 1080px){
+/* MEDIA 768 ---------------------------------*/
 
-    .biografia_container{
-
-        margin-bottom: 0;
-        height: 1880px;
-        background-position-x: -200px;
-        .contenedor_txt{
-            width: 45%;
-            margin-left: 0;
-        }
-
-
-    }
-
-}
-       */
 
 @media (max-width: 768px){
 
@@ -35,26 +20,6 @@
        
 }
 
-/* MEDIA 576 ---------------------------------*/
-
-@media (max-width: 576px){
-
-    .biografia_container{
-        background-size: contain;
-        margin-bottom: 0;
-        height: 720px;
-        background-position-x: 0px;
-        .contenedor_txt{
-            width: 100%;
-            height: 55%;
-            margin-left: 0;
-        }
-
-
-    }
-
-
-}
 
 /* MEDIA 414 ---------------------------------*/
 

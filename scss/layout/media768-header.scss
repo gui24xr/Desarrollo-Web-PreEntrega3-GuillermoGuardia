@@ -68,77 +68,41 @@
         
         .social_bar{
             
-            background-color: blueviolet;
+            left: $posicion-x-social-bar-768;
+            top: $posicion-y-social-bar-768;
         }
+
+        .social_bar_visible{
+
+            left: 100%;
+         }
+     
     }
+
+
 
 }
 
 
-/*-------------- HEADER 576 ----------------------------*/
 
+/* media 414 *-----------------------------*/
 
-@media (max-width: 576px){
+@media (max-width: 414px){
 
     .header{
-        
-        .header_nav_bar{
-            height: $ancho-nav-bar-media576;
-          
-            
-            .header_nav_logo1{
-            order: 2;
-            margin: 0 0px 0 0px;
-            align-self:stretch;
-            width:45PX;
-            height: 75px;
-            box-shadow: none;
-           
-            }
-            
-            .header_nav_toggle{
-                
-                margin: 0 10px 0 0px;
-                font-size: 45px;
-               
-            }
-            
-            .nav_lista_secciones_sitio{
-                order: 4;
-                
-                top: $ancho-nav-bar-media576;
-             
-                
-                ul{
-                    
-                    
-                    li{
-                        a{
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
-            
-            .header_nav_mxflag{
-                order: 1;
-                height: 40px;
-                margin: 0 0 0 20px;
-                
-            }
 
-           
-                           
-        }
-
-        
-        .social_bar{
+    .social_bar{
             
-            background-color: rgb(36, 255, 237);
-            display: none;
-        }
+        background-color: rgb(17, 14, 161);
+        left: $posicion-x-social-bar-414;
+        top: $posicion-y-social-bar-414;
+    }
+
+    .social_bar_visible{
+
+        left: 100%;
+     }
+
     }
 
 }
-
-
